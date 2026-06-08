@@ -84,6 +84,7 @@ void remove_dot(int row, int col)
 
 
 int main(void)
+
 {
     clear_canvas();
     show_canvas();
