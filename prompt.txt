@@ -1,4 +1,3 @@
-
 Write a menu-driven 2D graphics editor in C using a character-based canvas.
 
 The program should simulate a simple drawing environment using a 2D array of characters where each cell represents a pixel. The canvas should be displayed using * for drawn pixels and _ for empty spaces.
