@@ -1,1 +1,48 @@
 
+Write a menu-driven 2D graphics editor in C using a character-based canvas.
+
+The program should simulate a simple drawing environment using a 2D array of characters where each cell represents a pixel. The canvas should be displayed using * for drawn pixels and _ for empty spaces.
+Requirements:
+1.Canvas Setup
+-Create a fixed-size 2D array (e.g., 25 rows × 70 columns).
+-Initialize the canvas with blank characters.
+-Provide a function to display the canvas with borders.
+
+2.Shape Support
+-Implement functions to draw the following shapes:
+-Rectangle (using width and height)
+-Line (horizontal and vertical only)
+-Circle (using center and radius approximation)
+-Triangle (based on apex and height)
+
+3.Shape Storage System
+-Maintain a list/array of shapes using a struct.
+-Each shape should have:
+-Unique ID
+-Type (rectangle, line, circle, triangle)
+-Coordinates and dimensions
+-Status (active or deleted)
+
+4.Shape Management
+-Allow adding shapes through a menu
+-Allow deleting shapes by ID (soft delete)
+-Automatically redraw canvas after every update
+-Maintain persistence of shapes in memory
+
+5.Redrawing System
+-Clear canvas and redraw all active shapes whenever a change occurs.
+
+6.User Menu Options
+-Add Rectangle
+-Add Line
+-Add Circle
+-Add Triangle
+-Delete Shape by ID
+-List all shapes
+-Display Canvas
+-Exit program
+
+7.Utilities
+-Boundary checks for safe drawing
+-Modular functions for each shape
+-Clean and readable console output
